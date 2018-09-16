@@ -1,0 +1,32 @@
+{
+  "name": "2o3t-logger",
+  "version": "0.0.1",
+  "description": "2o3t.cn --> Logger",
+  "main": "index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "export Logger=* && node ./test",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "2o3t",
+    "zyao89",
+    "logger"
+  ],
+  "author": "Zyao89 <zyao89@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "dependencies": {
+    "log4js": "^3.0.5",
+    "2o3t-utility": "../2o3t-utility"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-egg": "^7.1.0",
+    "eslint-plugin-html": "^4.0.5"
+  }
+}
