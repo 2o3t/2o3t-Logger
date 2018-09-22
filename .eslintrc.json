@@ -1,6 +1,3 @@
 {
-    "extends": "eslint-config-egg",
-    "rules": {
-        "indent": [1, 4]
-    }
+    "extends": "eslint-config-2o3t"
 }
