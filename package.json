@@ -7,7 +7,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "export Logger=* && node ./test",
+    "test": "export LOGGER_ALLOW=* && node ./test",
     "lint": "eslint ."
   },
   "keywords": [
