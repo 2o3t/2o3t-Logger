@@ -57,3 +57,9 @@
     process.env.LOGGER_BAN=test,system; // 禁用的指定模式
     process.env.LOGGER_BAN=*; // 禁用所有
 ```
+
+- 可指定文件存储路径进行配置(默认项目根路径):
+
+```js
+    process.env.LOGGER_ROOT=/a/b/c;   // 绝对路径
+```
