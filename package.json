@@ -1,13 +1,13 @@
 {
   "name": "2o3t-logger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "2o3t.cn --> Logger",
   "main": "index.js",
   "files": [
     "lib"
   ],
   "scripts": {
-    "test": "export LOGGER_ALLOW=* && node ./test",
+    "test": "export LOGGER_ROOT=null && node ./test",
     "lint": "eslint ."
   },
   "keywords": [
@@ -21,7 +21,7 @@
     "node": ">= 8.0.0"
   },
   "dependencies": {
-    "2o3t-utility": "0.0.1",
+    "2o3t-utility": "0.0.3",
     "log4js": "^3.0.5"
   },
   "devDependencies": {
