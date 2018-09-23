@@ -1,6 +1,6 @@
 {
   "name": "2o3t-logger",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "2o3t.cn --> Logger",
   "main": "index.js",
   "files": [
@@ -16,6 +16,14 @@
     "logger"
   ],
   "author": "Zyao89 <zyao89@gmail.com>",
+  "bugs": {
+      "url": "https://github.com/2o3t/2o3t-Logger/issues",
+      "email": "zyao89@gmail.com"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/2o3t/2o3t-Logger.git"
+  },
   "license": "MIT",
   "engines": {
     "node": ">= 8.0.0"

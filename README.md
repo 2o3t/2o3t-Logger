@@ -4,11 +4,11 @@
 
 - 控制台输出
 
-![控制台输出](./captures/out.png)
+![控制台输出](https://raw.githubusercontent.com/2o3t/2o3t-Logger/master/captures/out.png)
 
 - 文件输出
 
-![文件输出](./captures/file.png)
+![文件输出](https://raw.githubusercontent.com/2o3t/2o3t-Logger/master/captures/file.png)
 
 ## Init
 
