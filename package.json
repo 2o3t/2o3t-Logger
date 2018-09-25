@@ -1,6 +1,6 @@
 {
   "name": "2o3t-logger",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "2o3t.cn --> Logger",
   "main": "index.js",
   "files": [
@@ -30,12 +30,12 @@
     "node": ">= 8.0.0"
   },
   "dependencies": {
-    "2o3t-utility": "^0.0.5",
+    "2o3t-utility": "^0.1.0",
     "log4js": "^3.0.5"
   },
   "devDependencies": {
     "eslint": "^5.5.0",
-    "eslint-config-2o3t": "git+https://github.com/2o3t/2o3t-EslintConfig.git",
+    "eslint-config-2o3t": "^1.0.0",
     "eslint-plugin-html": "^4.0.5"
   }
 }
