@@ -1,7 +1,7 @@
 {
   "name": "2o3t-logger",
-  "version": "0.1.0",
-  "description": "2o3t.cn --> Logger",
+  "version": "0.2.0",
+  "description": "a simple Logger tools for Node.js",
   "main": "index.js",
   "files": [
     "lib"
@@ -14,8 +14,10 @@
     "2o3t",
     "zyao89",
     "logger",
-    "log"
+    "log",
+    "color"
   ],
+  "types": "index.d.ts",
   "author": "Zyao89 <zyao89@gmail.com>",
   "bugs": {
     "url": "https://github.com/2o3t/2o3t-Logger/issues",
