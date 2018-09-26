@@ -1,108 +1,88 @@
-export = Logger;
-export as namespace Logger;
-
-interface JsonPlus {
-  /**
-   * 打印JSON格式化后的日志
-   * @param {string|any} args
-   */
-  json(...args: any);
-}
-
-interface SystemPlus extends JsonPlus {
-  /**
-   * 打印调试日志
-   * @param {string|any} args
-   */
-  debug(...args: any): void;
-
-  /**
-   * 打印信息日志
-   * @param {string|any} args
-   */
-  info(...args: any): void;
-
-  /**
-   * 打印警告日志
-   * @param {string|any} args
-   */
-  warn(...args: any): void;
-
-  /**
-   * 打印错误日志
-   * @param {string|any} args
-   */
-  error(...args: any): void;
-
-  /**
-   * 打印严重性错误日志
-   * @param {string|any} args
-   */
-  fatal(...args: any): void;
-
-  /**
-   * 打印系统日志
-   * @param {string|any} args
-   */
-  system(...args: any): void;
-
-  /**
-   * 打印测试日志
-   * @param {string|any} args
-   */
-  test(...args: any): void;
-}
-
 declare class Logger {
-  static instance(name: string): Logger;
+    static instance(name: string): Logger;
 
-  debug: JsonPlus;
-  info: JsonPlus;
-  warn: JsonPlus;
-  error: JsonPlus;
-  fatal: JsonPlus;
-  system: SystemPlus;
-  test: JsonPlus;
+    debug: Logger.Debug;
+    info: Logger.Info;
+    warn: Logger.Warn;
+    error: Logger.Error;
+    fatal: Logger.Fatal;
+    system: Logger.System;
+    test: Logger.Test;
+  }
 
-  /**
-   * 打印调试日志
-   * @param {string|any} args
-   */
-  debug(...args: any): void;
+  declare namespace Logger {
+    interface JsonPlus {
+      /**
+       * 打印JSON格式化后的日志
+       * @param {string|any} args
+       */
+      json(...args: Array<any>): void;
+    }
 
-  /**
-   * 打印信息日志
-   * @param {string|any} args
-   */
-  info(...args: any): void;
+    interface SystemPlus extends Logger.JsonPlus {
+      debug: Logger.Debug;
+      info: Logger.Info;
+      warn: Logger.Warn;
+      error: Logger.Error;
+      fatal: Logger.Fatal;
+    }
 
-  /**
-   * 打印警告日志
-   * @param {string|any} args
-   */
-  warn(...args: any): void;
+    interface Debug extends JsonPlus {
+      /**
+       * 打印调试日志
+       * @param {string|any} args
+       */
+      (...args: Array<any>): void;
+    }
 
-  /**
-   * 打印错误日志
-   * @param {string|any} args
-   */
-  error(...args: any): void;
+    interface Info extends JsonPlus {
+      /**
+       * 打印信息日志
+       * @param {string|any} args
+       */
+      (...args: Array<any>): void;
+    }
 
-  /**
-   * 打印严重性错误日志
-   * @param {string|any} args
-   */
-  fatal(...args: any): void;
+    interface Warn extends JsonPlus {
+      /**
+       * 打印警告日志
+       * @param {string|any} args
+       */
+      (...args: Array<any>): void;
+    }
 
-  /**
-   * 打印系统日志
-   * @param {string|any} args
-   */
-  system(...args: any): void;
+    interface Error extends JsonPlus {
+      /**
+       * 打印错误日志
+       * @param {string|any} args
+       */
+      (...args: Array<any>): void;
+    }
 
-  /**
-   * 打印测试日志
-   * @param {string|any} args
-   */
-  test(...args: any): void;
-}
+    interface Fatal extends JsonPlus {
+      /**
+       * 打印严重性错误日志
+       * @param {string|any} args
+       */
+      (...args: Array<any>): void;
+    }
+
+    interface System extends SystemPlus {
+      /**
+       * 打印系统日志
+       * @param {string|any} args
+       */
+      (...args: Array<any>): void;
+    }
+
+    interface Test extends JsonPlus {
+      /**
+       * 打印测试日志
+       * @param {string|any} args
+       */
+      (...args: Array<any>): void;
+    }
+
+  }
+
+  export = Logger;

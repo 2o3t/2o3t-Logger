@@ -39,6 +39,11 @@
      logger.test.json('2o3t!');
 
      // 系统内部打印
+     logger.system.debug('2o3t!');
+     logger.system.info('2o3t!');
+     logger.system.warn('2o3t!');
+     logger.system.error('2o3t!');
+     logger.system.fatal('2o3t!');
      logger.system.debug.json('2o3t!');
      logger.system.info.json('2o3t!');
      logger.system.warn.json('2o3t!');

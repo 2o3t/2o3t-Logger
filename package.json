@@ -1,10 +1,11 @@
 {
   "name": "2o3t-logger",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "description": "a simple Logger tools for Node.js",
   "main": "index.js",
   "files": [
-    "lib"
+    "lib",
+    "index.d.ts"
   ],
   "scripts": {
     "test": "export LOGGER_ROOT=null && node ./test",
