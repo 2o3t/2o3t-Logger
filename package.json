@@ -1,7 +1,7 @@
 {
   "name": "2o3t-logger",
-  "version": "0.3.3",
-  "description": "a simple Logger tools for Node.js",
+  "version": "0.3.6",
+  "description": "[Server Library] a simple Logger tools for Node.js",
   "main": "index.js",
   "files": [
     "lib",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "export LOGGER_ROOT=null && node ./test",
-    "lint": "eslint ."
+    "lint": "eslint ./ --fix"
   },
   "keywords": [
     "2o3t",

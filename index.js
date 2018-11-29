@@ -22,4 +22,8 @@ Logger.instance = function(name) {
     return log;
 };
 
+Logger.hooks = function() {
+    // do nothing...
+};
+
 module.exports = Logger;

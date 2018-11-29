@@ -1,5 +1,7 @@
 declare class Logger {
     static instance(name: string): Logger;
+    // 外部重写
+    static hook(name: string, args: object): void;
 
     debug: Logger.Debug;
     info: Logger.Info;

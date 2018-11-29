@@ -51,6 +51,27 @@
      logger.system.fatal.json('2o3t!');
 ```
 
+### 全局 hook
+
+通过全局重写 hooks 进行日志捕获.
+
+``` js
+Logger.hooks = function(name, args) {
+ // do something
+}
+```
+
+调用日志时, 需要使用 `hook` 才会进行捕获
+```js
+     logger.debug.hook('2o3t!');
+     logger.info.hook('2o3t!');
+     logger.warn.hook('2o3t!');
+     logger.error.hook('2o3t!');
+     logger.fatal.hook('2o3t!');
+     logger.system.hook('2o3t!');
+     logger.test.hook('2o3t!');
+```
+
 ## 可控制输出
 
 ### For example
