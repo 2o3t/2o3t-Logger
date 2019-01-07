@@ -1,6 +1,6 @@
 {
   "name": "2o3t-logger",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "[Server Library] a simple Logger tools for Node.js",
   "main": "index.js",
   "files": [
