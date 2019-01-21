@@ -99,3 +99,5 @@ Logger.hooks = function(name, args) {
     // or
     process.env.LOGGER_ROOT=NULL; // 禁用文件输出
 ```
+
+### !!! 重要: `system` 和 `test` 不会记录在文件日志中.
