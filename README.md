@@ -12,9 +12,15 @@
 
 ## Init
 
-``` js
+```js
     const Logger = require('2o3t-logger');
-    const logger = Logger.instance('names');
+    const logger = Logger.instance('names', {
+        disabledFile: true,
+    });
+    // or
+    const logger = new Logger('names', {
+        disabledFile: true, // 禁用文件输出
+    });
 ```
 
 ## Usage
